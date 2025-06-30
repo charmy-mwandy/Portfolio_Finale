@@ -5,20 +5,18 @@
 
 body {
   margin: 0;
-  /* min-width: 320px;
-  min-height: 100vh; */
-  /* background:pink; */
-
-  @apply  bg-green-600 text-gray-500
+  @apply  bg-[rgb(8,8,8)] text-white
 }
 
-
-
-img{
-  display: block;
-  max-width: 100%;
+.main-section{
+  @apply text-white min-h-[90vh] lg:min-h-screen flex items-center justify-center
 }
 
-p{
-  background-color: #327e32;
+h1{
+  @apply  text-3xl md:text-4xl xl:text-5xl leading-[1.4] 
 }
+
+.button-btn{
+  @apply bg-black text-white border border-[#ffc448] rounded-[10px] text-[18px] py-[17px] px-[40px] no-underline hover:text-black hover:bg-[#ffc448]
+}
+
