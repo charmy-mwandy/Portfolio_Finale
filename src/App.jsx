@@ -11,7 +11,7 @@ function App() {
       <Navbar />
 
       {/* Content Area */}
-      <main className="pt-20 lg:pt-0 lg:ml-64 px-4">
+      <main className="pt-20 xl:pt-0 xl:ml-56 px-4 xl:px-0">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />

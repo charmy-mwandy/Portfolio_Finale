@@ -8,7 +8,7 @@ export default {
     extend: {
       sm: "340px",
       md: "540px",
-      lg: "768px",
+      lg: "1024px",
       xl: "1180px",
     },
     container: {

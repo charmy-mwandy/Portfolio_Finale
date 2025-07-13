@@ -52,12 +52,12 @@ const Home = () => {
         
     return(
         <>
-            <div className="page hidden">
-                <div className="page-bg  hidden">
-                    <img className='bgfirst' src= 'images/bg-header 1.png'  alt="homeimage"/>
+            <div className="page hidden xl:block">
+                <div className="page-bg flex float-end xl:w-1/2 xl:m-0 xl:p-0">
+                    <img className='home_img w-full max-h-[90vh] object-contain' src= 'images/bg-header 1.png'  alt="homeimg"/>
                 </div>
                
-                <span className='tags top-tags'>
+                <span className='top-tags' id='tags'>
                     <span className='bottom-tag-html'>&lt;html&gt;</span>
                     <br />
                     <span className='top-tag-html'>&lt;body&gt;</span>
@@ -65,16 +65,16 @@ const Home = () => {
 
                 <Outlet />
 
-                <span className='tags bottom-tags'>
-                    &lt;/body&gt;
+                <span className='bottom-tags' id='tags'>
+                    <span className='top-tag-html'>&lt;body&gt;</span>
                     <br />
                     <span className='bottom-tag-html'>&lt;/html&gt;</span>
-                </span>
+                </span>  
             
             </div>
-        <div className='main-section' id='hero'>
-       <div className=" container flex flex-col items-center justify-center ">
-            <div className="hero-txt space-y-9 justify-center items-cente text-center ">
+        <div className='main-section w-full xl:w-1/2' id='hero'>
+       <div className="container flex flex-col items-center justify-center xl:h-screen xl:justify-center  xl:items-end"> 
+            <div className="hero-txt space-y-9  xl:text-start ">
                 <h1>
 
                     <span className={letterClass}>H</span>
@@ -94,7 +94,7 @@ const Home = () => {
                     idx={22}/>
                  
                 </h1>
-                <h3 className='text-2xl md:text-4xl xl:text-5xl leading-[1.9]  text-[#FFC448]'>&lt; {/* Front-end Developer */} {text} &gt;</h3>
+                <h3 className='text-xl leading-[1.9] text-[#FFC448] '>&lt; {/* Front-end Developer */} {text} &gt;</h3>
                 <div className='button pb-7'>
                     <a  href={CV} 
                         download="Charmaine Mwandiringa - Resume.pdf"

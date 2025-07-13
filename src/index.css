@@ -3,20 +3,31 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   margin: 0;
   @apply  bg-[rgb(8,8,8)] text-white
 }
 
 .main-section{
-  @apply text-white min-h-[90vh] lg:min-h-screen flex items-center justify-center
+  @apply bg-slate-900 md:bg-green-600 lg:bg-red-600 xl:bg-pink-400 text-white min-h-[90vh] xl:min-h-screen flex items-center xl:justify-start  xl:items-start
 }
 
 h1{
-  @apply  text-3xl md:text-4xl xl:text-5xl leading-[1.4] 
+  @apply  text-3xl md:text-4xl xl:text-7xl leading-[1.4] 
 }
 
 .button-btn{
   @apply bg-black text-white border border-[#ffc448] rounded-[10px] text-[18px] py-[17px] px-[40px] no-underline hover:text-black hover:bg-[#ffc448]
 }
 
+#tags{
+  @apply  xl:absolute xl:bottom-14 text-[#6e7071] opacity-[0.5] lg:left-[270px]
+}
+
+.top-tags{
+  @apply  xl:bottom-[auto] xl:top-12 
+}
+.top-tag-html{
+  @apply  xl:ml-[20px] xl:text-green-500
+}
